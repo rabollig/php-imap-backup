@@ -67,4 +67,4 @@ Generate your PGP key on a bare-metal server or a workstation as they are more
 likely to have randomness to draw from.  Copy just the public key to the server
 this script runs on - keep the private key safely somewhere else.
 
-There's not much reason 
+
