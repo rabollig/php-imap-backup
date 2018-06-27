@@ -12,7 +12,7 @@ all of their precious mail from the cloud - with no way to get it back.
 This script does the following:
 - Log into mail account
 - Get a list of messages
-- Ignore messages it has already seen
+- Ignore messages it has already seen... also ignore unread messages
 - Download new messages
 - (Optionally) encrypt messages for storage with PGP
 
@@ -23,6 +23,11 @@ expeditious and incomplete.
 
 *There is no restore function yet!!*  I will build that if we ever need to 
 recover data.
+
+The script does not download unseen messages, therefore, mail does not get 
+backed up until it is read.  This is to prevent the script from marking 
+mail already read.  Probably not an issue for most users, but if you don't
+check mail often, you might not be very well protected.
 
 The script does temporarily write mail to the disk unencrypted.  Given that
 the account password is in plain text, I don't see this as the biggest threat.
@@ -39,6 +44,15 @@ None of my users ever throw anything away, so there's not much risk for me...
 but a real quality program would do a better job.  
 
 ## Installation
+- Build an Ubuntu system with the needed dependencies
+```angular2html
+apt-get update
+apt-get --yes upgrade
+apt-get --yes dist-upgrade
+apt-get --yes clean
+apt-get --yes autoremove
+apt-get --yes install php7.0 php-imap gpg haveged unattended-upgrades
+```
 - Clone the repository
 - Copy the config-example.php to config.php
 - Edit the configuration file
