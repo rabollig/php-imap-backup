@@ -1,1 +1,35 @@
+# Environment
+.env
 config.php
+/storage/*.key
+
+
+
+# Temp files
+temp/*
+*.swp
+.sass-cache
+/public/hot
+/public/storage
+/cache/
+
+
+
+# IDE
+/.vscode
+.idea/*
+
+# Vagrant
+/.vagrant
+*.log
+
+# Other
+
+vendor
+.DS_Store
+node_modules/
+npm-debug.log
+yarn-error.log
+composer.phar
+
+
