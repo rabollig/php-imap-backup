@@ -4,7 +4,7 @@ This is a lightweight script to backup IMAP accounts.  It is written in PHP.
 *There is no restore script yet!*
 
 I have a few non-tech-savvy people that I help wrangle their computers.  Some 
-have stopped using regular computers and just use phones and tables with 
+have stopped using regular computers and just use phones and tablets with 
 all of their data in the cloud.  This means they no longer have a workstation
 backup.  I'm concerned that they might eventually have an event that deletes
 all of their precious mail from the cloud - with no way to get it back.
