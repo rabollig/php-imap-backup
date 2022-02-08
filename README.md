@@ -51,7 +51,7 @@ apt-get --yes upgrade
 apt-get --yes dist-upgrade
 apt-get --yes clean
 apt-get --yes autoremove
-apt-get --yes install php7.0 php-imap gpg haveged unattended-upgrades
+apt-get --yes install php8.1 php-imap gpg haveged unattended-upgrades
 ```
 - Clone the repository
 - Copy the config-example.php to config.php
